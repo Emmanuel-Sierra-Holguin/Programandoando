@@ -52,6 +52,8 @@ public class guiaMain {
                 case 2:
                     Ejercicio2();
                     break;
+                case 3:
+                    Ejercicio3();
                 default:
                     JOptionPane.showConfirmDialog(null, "Ingreso una opcion invalida");
                     break;
@@ -147,5 +149,10 @@ public class guiaMain {
     public void Ejercicio2() {
         // Ejercicio2 FactorialDeUnNumero = new Ejercicio2();
         // FactorialDeUnNumero.FactorialDeUnNumero();
+    }
+
+    public void Ejercicio3() {
+        Ejercicio3 ValidarEdad = new Ejercicio3();
+        ValidarEdad.ValidarEdad();
     }
 }

@@ -1,7 +1,7 @@
 # Ejercicios Carlos
 
 - [ ] **Estructuras Condicionales (3.2)**
-  - [ ] Ej. 3 (Básico): Validación de edad e ingreso.
+  - [x] Ej. 3 (Básico): Validación de edad e ingreso.
   - [ ] Ej. 7 (Medio): Mayor de tres números (con opción de empate).
 - [ ] **Ciclos y Arreglos (3.3)**
   - [ ] Ej. 14 (Básico): Impares del 1 al 100 (while).
