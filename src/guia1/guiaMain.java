@@ -54,6 +54,7 @@ public class guiaMain {
                     break;
                 case 3:
                     Ejercicio3();
+                    break;
                 default:
                     JOptionPane.showConfirmDialog(null, "Ingreso una opcion invalida");
                     break;
