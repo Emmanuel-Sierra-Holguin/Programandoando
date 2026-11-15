@@ -1,4 +1,5 @@
 package src.guia1;
+
 import javax.swing.JOptionPane;
 
 public class guiaMain {
@@ -54,6 +55,9 @@ public class guiaMain {
                     break;
                 case 3:
                     Ejercicio3();
+                    break;
+                case 7:
+                    Ejercicio7();
                     break;
                 default:
                     JOptionPane.showConfirmDialog(null, "Ingreso una opcion invalida");
@@ -155,5 +159,10 @@ public class guiaMain {
     public void Ejercicio3() {
         Ejercicio3 ValidarEdad = new Ejercicio3();
         ValidarEdad.ValidarEdad();
+    }
+
+    public void Ejercicio7() {
+        Ejercicio7 MayorDeTresNumeros = new Ejercicio7();
+        MayorDeTresNumeros.MayorDeTresNumeros();
     }
 }
