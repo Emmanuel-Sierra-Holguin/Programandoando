@@ -130,6 +130,10 @@ public class guiaMain {
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 2");
                     // Ejercicio12();
                     break;
+                case 14:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 14");
+                    Ejercicio14();
+                    break;
                 default:
                     JOptionPane.showConfirmDialog(null, "Ingreso una opcion invalida");
                     break;
@@ -164,5 +168,10 @@ public class guiaMain {
     public void Ejercicio7() {
         Ejercicio7 MayorDeTresNumeros = new Ejercicio7();
         MayorDeTresNumeros.MayorDeTresNumeros();
+    }
+
+    public void Ejercicio14() {
+        Ejercicio14 NumerosImpares = new Ejercicio14();
+        NumerosImpares.NumerosImpares();
     }
 }
