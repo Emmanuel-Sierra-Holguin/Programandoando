@@ -3,7 +3,7 @@ package guia1;
 import java.util.Scanner;
 
 public class Ejercicio8 {
-    public static void main(String[] args) {
+    public void CajaRegistradora() {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("ingresa el precio: ");
