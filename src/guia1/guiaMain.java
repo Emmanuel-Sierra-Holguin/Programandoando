@@ -1,4 +1,5 @@
 package src.guia1;
+
 import javax.swing.JOptionPane;
 
 public class guiaMain {
@@ -51,6 +52,12 @@ public class guiaMain {
                     break;
                 case 2:
                     Ejercicio2();
+                    break;
+                case 3:
+                    Ejercicio3();
+                    break;
+                case 7:
+                    Ejercicio7();
                     break;
                 default:
                     JOptionPane.showConfirmDialog(null, "Ingreso una opcion invalida");
@@ -123,6 +130,26 @@ public class guiaMain {
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 2");
                     // Ejercicio12();
                     break;
+                case 14:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 14");
+                    Ejercicio14();
+                    break;
+                case 20:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 20");
+                    Ejercicio20();
+                    break;
+                case 23:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 23");
+                    Ejercicio23();
+                    break;
+                case 24:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 24");
+                    Ejercicio24();
+                    break;
+                case 29:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 29");
+                    Ejercicio29();
+                    break;
                 default:
                     JOptionPane.showConfirmDialog(null, "Ingreso una opcion invalida");
                     break;
@@ -147,5 +174,40 @@ public class guiaMain {
     public void Ejercicio2() {
         // Ejercicio2 FactorialDeUnNumero = new Ejercicio2();
         // FactorialDeUnNumero.FactorialDeUnNumero();
+    }
+
+    public void Ejercicio3() {
+        Ejercicio3 ValidarEdad = new Ejercicio3();
+        ValidarEdad.ValidarEdad();
+    }
+
+    public void Ejercicio7() {
+        Ejercicio7 MayorDeTresNumeros = new Ejercicio7();
+        MayorDeTresNumeros.MayorDeTresNumeros();
+    }
+
+    public void Ejercicio14() {
+        Ejercicio14 NumerosImpares = new Ejercicio14();
+        NumerosImpares.NumerosImpares();
+    }
+
+    public void Ejercicio20() {
+        Ejercicio20 NumerosDivisibles = new Ejercicio20();
+        NumerosDivisibles.NumerosDivisibles();
+    }
+
+    public void Ejercicio23() {
+        Ejercicio23 SumarNumerosDeUnArreglo = new Ejercicio23();
+        SumarNumerosDeUnArreglo.SumarNumerosDeUnArreglo();
+    }
+
+    public void Ejercicio24() {
+        Ejercicio24 NumeroMayorEnUnArray = new Ejercicio24();
+        NumeroMayorEnUnArray.NumeroMayorEnUnArray();
+    }
+
+    public void Ejercicio29() {
+        Ejercicio29 CaracterDeUnaCadena = new Ejercicio29();
+        CaracterDeUnaCadena.CaracterDeUnaCadena();
     }
 }
