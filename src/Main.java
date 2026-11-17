@@ -1,8 +1,7 @@
-package src;
 import javax.swing.JOptionPane;
 
-import src.guia1.guiaMain;
-import src.guia2.guia2Main;
+import guia1.guiaMain;
+import guia2.guia2Main;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,5 +1,4 @@
-package src.guia1;
-
+package guia1;
 import javax.swing.JOptionPane;
 
 public class guiaMain {
@@ -47,18 +46,61 @@ public class guiaMain {
             // El metodo que se llama se deberá de definir al final del archivo.
             // =================================================================
             switch (opcion) {
+
                 case 1:
-                    Ejercicio1();
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 1");
+                    Ejercicio1 ej1 = new Ejercicio1();
+                    ej1.NumeroEntero();
                     break;
+
                 case 2:
-                    Ejercicio2();
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 2");
+                    // Ejercicio2();
                     break;
+
                 case 3:
-                    Ejercicio3();
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 3");
+                    // Ejercicio 3();
+                    break ;
+
+                case 4:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 4");
+                    Ejercicio4 ej4 = new Ejercicio4();
+                    ej4.Calculadora();
                     break;
+
+                case 5:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 5");
+                    // Ejercicio5();
+                    break;
+
+                case 6:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 6");
+                    // Ejercicio6();
+                    break;
+                
                 case 7:
-                    Ejercicio7();
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 7");
+                    // Ejercicio7();
                     break;
+
+                case 8:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 8");
+                    Ejercicio8.main(null);
+                    break;
+
+                case 9:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 9");
+                    Ejercicio9.main(null);
+                    break;
+                
+                case 10:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 10");
+                    Ejercicio10 ej10 = new Ejercicio10();
+                    ej10.CalcularIMC();
+                    break;
+
+
                 default:
                     JOptionPane.showConfirmDialog(null, "Ingreso una opcion invalida");
                     break;
@@ -122,37 +164,111 @@ public class guiaMain {
             // El metodo que se llama se deberá de definir al final del archivo.
             // =================================================================
             switch (opcion) {
+
                 case 11:
-                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 1");
-                    // Ejercicio11();
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 11");
+                    Ejercicio11 ej11 = new Ejercicio11();
+                    ej11.Imprimir();
                     break;
+
                 case 12:
-                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 2");
-                    // Ejercicio12();
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 12");
+                    Ejercicio12 ej12 = new Ejercicio12();
+                    ej12.ImprimirAlRevez();
                     break;
+                
+                case 13:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 13");
+                    // Aca se llama al ejercicio 13
+                    break;
+
                 case 14:
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 14");
-                    Ejercicio14();
+                    // Aca se llama al ejercicio 14
                     break;
+                
+                case 15:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 15");
+                    Ejercicio15 ej15 = new Ejercicio15();
+                    ej15.Suma();
+                    break;
+                
+                case 16:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 16");
+                    Ejercicio16.main(null);
+                    break;
+                
+                case 17:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 17");
+                    Ejercicio17.main(null);
+                    break;
+                
+                case 18:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 18");
+                    Ejercicio18 ej18 = new Ejercicio18();
+                    ej18.TablaMultiplicar();
+                    break;
+                
+                case 19:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 19");
+                    // Aca se llama al ejercicio 19
+                    break;
+                
                 case 20:
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 20");
-                    Ejercicio20();
+                    // Aca se llama al ejercicio 20
                     break;
+                
+                case 21:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 18");
+                    Ejercicio21 ej21 = new Ejercicio21();
+                    ej21.Factorial();
+                    break;
+
+                case 22:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 22");
+                    // Aca se llama al ejercicio 22
+                    break;
+                
                 case 23:
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 23");
-                    Ejercicio23();
+                    // Aca se llama al ejercicio 23
                     break;
+                
                 case 24:
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 24");
-                    Ejercicio24();
+                    // Aca se llama al ejercicio 24
                     break;
+                
+                case 25:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 25");
+                    Ejercicio25.main(null);
+                    break;
+                
+                case 26:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 26");
+                    Ejercicio26.main(null);
+                    break;
+
+                case 27:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 24");
+                    // Aca se llama al ejercicio 27
+                    break;
+
+                case 28:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 28");
+                    Ejercicio28.main(null);
+                    break;
+
                 case 29:
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 29");
-                    Ejercicio29();
+                    // Aca se llama al ejercicio 29
                     break;
+
                 default:
                     JOptionPane.showConfirmDialog(null, "Ingreso una opcion invalida");
                     break;
+
             }
 
         } else {
