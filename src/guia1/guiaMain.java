@@ -134,6 +134,10 @@ public class guiaMain {
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 14");
                     Ejercicio14();
                     break;
+                case 20:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 14");
+                    Ejercicio20();
+                    break;
                 default:
                     JOptionPane.showConfirmDialog(null, "Ingreso una opcion invalida");
                     break;
@@ -173,5 +177,10 @@ public class guiaMain {
     public void Ejercicio14() {
         Ejercicio14 NumerosImpares = new Ejercicio14();
         NumerosImpares.NumerosImpares();
+    }
+
+    public void Ejercicio20() {
+        Ejercicio20 numerosDivisibles = new Ejercicio20();
+        numerosDivisibles.numerosDivisibles();
     }
 }
