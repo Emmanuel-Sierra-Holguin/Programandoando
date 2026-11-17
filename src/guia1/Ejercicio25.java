@@ -2,7 +2,7 @@ package guia1;
 
 
 public class Ejercicio25{
-    public static void main(String[] args){
+    public void NumeroMenor(){
         int[] numeros = {2,4,6,8,10,12,14};
 
         int menor = numeros[0];

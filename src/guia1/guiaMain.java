@@ -291,4 +291,39 @@ public class guiaMain {
         // Ejercicio2 FactorialDeUnNumero = new Ejercicio2();
         // FactorialDeUnNumero.FactorialDeUnNumero();
     }
+
+    public void Ejercicio3() {
+        Ejercicio3 ValidarEdad = new Ejercicio3();
+        ValidarEdad.ValidarEdad();
+    }
+
+    public void Ejercicio7() {
+        Ejercicio7 MayorDeTresNumeros = new Ejercicio7();
+        MayorDeTresNumeros.MayorDeTresNumeros();
+    }
+
+    public void Ejercicio14() {
+        Ejercicio14 NumerosImpares = new Ejercicio14();
+        NumerosImpares.NumerosImpares();
+    }
+
+    public void Ejercicio20() {
+        Ejercicio20 NumerosDivisibles = new Ejercicio20();
+        NumerosDivisibles.NumerosDivisibles();
+    }
+
+    public void Ejercicio23() {
+        Ejercicio23 SumarNumerosDeUnArreglo = new Ejercicio23();
+        SumarNumerosDeUnArreglo.SumarNumerosDeUnArreglo();
+    }
+
+    public void Ejercicio24() {
+        Ejercicio24 NumeroMayorEnUnArray = new Ejercicio24();
+        NumeroMayorEnUnArray.NumeroMayorEnUnArray();
+    }
+
+    public void Ejercicio29() {
+        Ejercicio29 CaracterDeUnaCadena = new Ejercicio29();
+        CaracterDeUnaCadena.CaracterDeUnaCadena();
+    }
 }
