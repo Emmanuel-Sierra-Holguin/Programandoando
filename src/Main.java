@@ -1,8 +1,8 @@
-package src;
 import javax.swing.JOptionPane;
+import ConexionDb.InicializarDB;
 
-import src.guia1.guiaMain;
-import src.guia2.guia2Main;
+import guia1.guiaMain;
+import guia2.guia2Main;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,5 +24,6 @@ public class Main {
             guia2Main guia2 = new guia2Main();
             guia2.Guia2();
         }
+
     }
 }

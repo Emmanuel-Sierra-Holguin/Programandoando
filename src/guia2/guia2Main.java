@@ -1,4 +1,4 @@
-package src.guia2;
+package guia2;
 import javax.swing.JOptionPane;
 
 public class guia2Main {
