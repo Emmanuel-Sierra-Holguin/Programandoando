@@ -15,6 +15,10 @@
 .mtj.tmp/
 
 # Package Files #
+<<<<<<< HEAD
+=======
+*.jar
+>>>>>>> c6a3061d75ecc5f3f89b3bee623da34fa4afbbea
 *.war
 *.nar
 *.ear

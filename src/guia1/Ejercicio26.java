@@ -1,5 +1,6 @@
 package guia1;
 
+import javax.swing.JOptionPane;
 
 public class Ejercicio26{
     public void NumeroVeces(){
@@ -14,6 +15,6 @@ public class Ejercicio26{
                 contador++;
             }
         }
-        System.out.println("El número " + numeroBuscado + " aparece " + contador + " veces en el arreglo.");
+         JOptionPane.showMessageDialog(null, "El número " + numeroBuscado + " aparece " + contador + " veces en el arreglo.");
     }
 }
