@@ -138,6 +138,10 @@ public class guiaMain {
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 14");
                     Ejercicio20();
                     break;
+                case 23:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 23");
+                    Ejercicio23();
+                    break;
                 default:
                     JOptionPane.showConfirmDialog(null, "Ingreso una opcion invalida");
                     break;
@@ -182,5 +186,10 @@ public class guiaMain {
     public void Ejercicio20() {
         Ejercicio20 numerosDivisibles = new Ejercicio20();
         numerosDivisibles.numerosDivisibles();
+    }
+
+    public void Ejercicio23() {
+        Ejercicio23 sumarNumerosDeUnArreglo = new Ejercicio23();
+        sumarNumerosDeUnArreglo.sumarNumerosDeUnArreglo();
     }
 }
