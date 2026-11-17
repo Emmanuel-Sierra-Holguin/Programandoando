@@ -55,12 +55,14 @@ public class guiaMain {
 
                 case 2:
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 2");
-                    // Ejercicio2();
+                    Ejercicio2 ej2 = new Ejercicio2();
+                    ej2.IngresoDatos();
                     break;
 
                 case 3:
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 3");
-                    // Ejercicio 3();
+                    Ejercicio3 ej3 = new Ejercicio3();
+                    ej3.ValidarEdad();
                     break ;
 
                 case 4:
@@ -71,27 +73,32 @@ public class guiaMain {
 
                 case 5:
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 5");
-                    // Ejercicio5();
+                    Ejercicio5 ej5 = new Ejercicio5();
+                    ej5.IngresoDatos();
                     break;
 
                 case 6:
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 6");
-                    // Ejercicio6();
+                    Ejercicio6 ej6 = new Ejercicio6();
+                    ej6.IngresoDatos();
                     break;
                 
                 case 7:
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 7");
-                    // Ejercicio7();
+                    Ejercicio7 ej7 = new Ejercicio7();
+                    ej7.MayorDeTresNumeros();
                     break;
 
                 case 8:
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 8");
-                    Ejercicio8.main(null);
+                    Ejercicio8 ej8 = new Ejercicio8();
+                    ej8.CajaRegistradora();
                     break;
 
                 case 9:
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 9");
-                    Ejercicio9.main(null);
+                    Ejercicio9 ej9 = new Ejercicio9();
+                    ej9.Login();
                     break;
                 
                 case 10:
@@ -179,12 +186,14 @@ public class guiaMain {
                 
                 case 13:
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 13");
-                    // Aca se llama al ejercicio 13
+                    Ejercicio13 ej13 = new Ejercicio13();
+                    ej13.NumerosPares();
                     break;
 
                 case 14:
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 14");
-                    // Aca se llama al ejercicio 14
+                    Ejercicio14 ej14 = new Ejercicio14();
+                    ej14.NumerosImpares();
                     break;
                 
                 case 15:
@@ -195,12 +204,14 @@ public class guiaMain {
                 
                 case 16:
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 16");
-                    Ejercicio16.main(null);
+                    Ejercicio16 ej16 = new Ejercicio16();
+                    ej16.SumaImpar();
                     break;
                 
                 case 17:
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 17");
-                    Ejercicio17.main(null);
+                    Ejercicio17 ej17 = new Ejercicio17();
+                    ej17.TablaMultiplicar();
                     break;
                 
                 case 18:
@@ -211,12 +222,14 @@ public class guiaMain {
                 
                 case 19:
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 19");
-                    // Aca se llama al ejercicio 19
+                    Ejercicio19 ej19 = new Ejercicio19();
+                    ej19.NumerosMultiples();
                     break;
                 
                 case 20:
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 20");
-                    // Aca se llama al ejercicio 20
+                    Ejercicio20 ej20 = new Ejercicio20();
+                    ej20.NumerosDivisibles();
                     break;
                 
                 case 21:
@@ -227,42 +240,50 @@ public class guiaMain {
 
                 case 22:
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 22");
-                    // Aca se llama al ejercicio 22
+                    Ejercicio22 ej22 = new Ejercicio22();
+                    ej22.ArregloDe10Numeros();
                     break;
                 
                 case 23:
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 23");
-                    // Aca se llama al ejercicio 23
+                    Ejercicio23 ej23 = new Ejercicio23();
+                    ej23.SumarNumerosDeUnArreglo();
                     break;
                 
                 case 24:
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 24");
-                    // Aca se llama al ejercicio 24
+                    Ejercicio24 ej24 = new Ejercicio24();
+                    ej24.NumeroMayorEnUnArray();
                     break;
                 
                 case 25:
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 25");
-                    Ejercicio25.main(null);
+                    Ejercicio25 ej25 = new Ejercicio25();
+                    ej25.NumeroMenor();
                     break;
                 
                 case 26:
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 26");
-                    Ejercicio26.main(null);
+                    Ejercicio26 ej26 = new Ejercicio26();
+                    ej26.NumeroVeces();
                     break;
 
                 case 27:
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 24");
-                    // Aca se llama al ejercicio 27
+                    Ejercicio27 ej27 = new Ejercicio27();
+                    ej27.CuadradoAsteriscos();
                     break;
 
                 case 28:
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 28");
-                    Ejercicio28.main(null);
+                    Ejercicio28 ej28 = new Ejercicio28();
+                    ej28.CuboNumero();
                     break;
 
                 case 29:
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 29");
-                    // Aca se llama al ejercicio 29
+                    Ejercicio29 ej29 = new Ejercicio29();
+                    ej29.CaracterDeUnaCadena();
                     break;
 
                 default:
@@ -275,55 +296,5 @@ public class guiaMain {
             JOptionPane.showConfirmDialog(null, "Ingreso una opcion invalida");
         }
 
-    }
-
-    // ====================== Invocar ejercicios ======================
-    // Aquí se invocan los ejercicios atravez de métodos.
-    // Es solo copiar y pegar el método, cambiar el nombre y al método al que accede
-    // (TablaDel7.TablaMultiplicarDel7()).
-    // ================================================================
-    public void Ejercicio1() {
-        // Ejercicio1 TablaDel7 = new Ejercicio1();
-        // TablaDel7.TablaMultiplicarDel7();
-    }
-
-    public void Ejercicio2() {
-        // Ejercicio2 FactorialDeUnNumero = new Ejercicio2();
-        // FactorialDeUnNumero.FactorialDeUnNumero();
-    }
-
-    public void Ejercicio3() {
-        Ejercicio3 ValidarEdad = new Ejercicio3();
-        ValidarEdad.ValidarEdad();
-    }
-
-    public void Ejercicio7() {
-        Ejercicio7 MayorDeTresNumeros = new Ejercicio7();
-        MayorDeTresNumeros.MayorDeTresNumeros();
-    }
-
-    public void Ejercicio14() {
-        Ejercicio14 NumerosImpares = new Ejercicio14();
-        NumerosImpares.NumerosImpares();
-    }
-
-    public void Ejercicio20() {
-        Ejercicio20 NumerosDivisibles = new Ejercicio20();
-        NumerosDivisibles.NumerosDivisibles();
-    }
-
-    public void Ejercicio23() {
-        Ejercicio23 SumarNumerosDeUnArreglo = new Ejercicio23();
-        SumarNumerosDeUnArreglo.SumarNumerosDeUnArreglo();
-    }
-
-    public void Ejercicio24() {
-        Ejercicio24 NumeroMayorEnUnArray = new Ejercicio24();
-        NumeroMayorEnUnArray.NumeroMayorEnUnArray();
-    }
-
-    public void Ejercicio29() {
-        Ejercicio29 CaracterDeUnaCadena = new Ejercicio29();
-        CaracterDeUnaCadena.CaracterDeUnaCadena();
     }
 }

@@ -2,7 +2,7 @@ package guia1;
 
 
 public class Ejercicio26{
-    public static void NumeroVeces(){
+    public void NumeroVeces(){
         int[] numeros = {1,23,1,34,1,56};
         int numeroBuscado = 1;
 
