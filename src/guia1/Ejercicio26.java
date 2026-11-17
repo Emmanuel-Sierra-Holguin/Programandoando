@@ -3,7 +3,7 @@ package guia1;
 import javax.swing.JOptionPane;
 
 public class Ejercicio26{
-    public static void NumeroVeces(){
+    public void NumeroVeces(){
         int[] numeros = {1,23,1,34,1,56};
         int numeroBuscado = 1;
 
