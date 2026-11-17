@@ -2,7 +2,7 @@ package guia1;
 
 
 public class Ejercicio28{
-    public static void main(String[] args){
+    public void CuboNumero(){
         
 
         for(int i = 1; i <= 20; i++ ){
