@@ -15,10 +15,7 @@
 .mtj.tmp/
 
 # Package Files #
-<<<<<<< HEAD
-=======
 *.jar
->>>>>>> c6a3061d75ecc5f3f89b3bee623da34fa4afbbea
 *.war
 *.nar
 *.ear
@@ -105,3 +102,5 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/linux,windows,macos,java
+# Driver SQLite (necesario para el proyecto)
+!libs/sqlite-jdbc-3.49.0.0.jar
