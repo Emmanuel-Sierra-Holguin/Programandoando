@@ -3,7 +3,7 @@ package guia2;
 import javax.swing.JOptionPane;
 
 public class Ej4Arreglo {
-    public static void main(String[] args){
+    public  void PosicionNombre(){
         String[] nombres = {"Ana","Luis","Maria","Pedro", "Sofia"};
         try {
             int i = Integer.parseInt(
