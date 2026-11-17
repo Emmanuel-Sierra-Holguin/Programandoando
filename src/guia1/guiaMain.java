@@ -192,13 +192,13 @@ public class guiaMain {
     }
 
     public void Ejercicio20() {
-        Ejercicio20 numerosDivisibles = new Ejercicio20();
-        numerosDivisibles.numerosDivisibles();
+        Ejercicio20 NumerosDivisibles = new Ejercicio20();
+        NumerosDivisibles.NumerosDivisibles();
     }
 
     public void Ejercicio23() {
-        Ejercicio23 sumarNumerosDeUnArreglo = new Ejercicio23();
-        sumarNumerosDeUnArreglo.sumarNumerosDeUnArreglo();
+        Ejercicio23 SumarNumerosDeUnArreglo = new Ejercicio23();
+        SumarNumerosDeUnArreglo.SumarNumerosDeUnArreglo();
     }
 
     public void Ejercicio24() {

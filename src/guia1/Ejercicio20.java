@@ -3,7 +3,7 @@ package src.guia1;
 import javax.swing.JOptionPane;
 
 public class Ejercicio20 {
-    public void numerosDivisibles() {
+    public void NumerosDivisibles() {
         int numeroActual = 1;
         String resultado = "";
 
