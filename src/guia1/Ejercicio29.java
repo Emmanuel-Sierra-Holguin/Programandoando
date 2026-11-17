@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 
 public class Ejercicio29 {
     public void CaracterDeUnaCadena() {
-        String cadena = "ZAAGLOGEN";
+        String cadena = JOptionPane.showInputDialog(null, "Ingrese una cadena de texto: ");
         String resultado = "";
 
         for (char c : cadena.toCharArray()){
