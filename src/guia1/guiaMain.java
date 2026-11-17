@@ -135,7 +135,7 @@ public class guiaMain {
                     Ejercicio14();
                     break;
                 case 20:
-                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 14");
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 20");
                     Ejercicio20();
                     break;
                 case 23:
