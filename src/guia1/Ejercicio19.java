@@ -1,7 +1,8 @@
 package guia1;
 
 public class Ejercicio19 {
-	public static void main(String[] args) {
+	
+	public void NumerosMultiples() {
 		int cantidad = 0;
 
 		for (int numero = 1; numero <= 200; numero++) {

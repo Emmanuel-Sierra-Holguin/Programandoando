@@ -3,7 +3,7 @@ package guia1;
 
 
 public class Ejercicio9 {
-     public static void main(String[] args){
+     public  void Login(){
          String usuario = "admin";
          String contraseña = "1234";
 
