@@ -38,6 +38,7 @@ public class guiaMain {
                                     "\n")
 
             );
+            
             // ====================== Ejecución ejercicios ======================
             // Acá se debe de poner el caso y la opción de ejercicio siguiendo la estructura
             // de abajo.
