@@ -142,6 +142,10 @@ public class guiaMain {
                     JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 23");
                     Ejercicio23();
                     break;
+                case 24:
+                    JOptionPane.showConfirmDialog(null, "Ingreso al Ejercicio 24");
+                    Ejercicio24();
+                    break;
                 default:
                     JOptionPane.showConfirmDialog(null, "Ingreso una opcion invalida");
                     break;
@@ -191,5 +195,10 @@ public class guiaMain {
     public void Ejercicio23() {
         Ejercicio23 sumarNumerosDeUnArreglo = new Ejercicio23();
         sumarNumerosDeUnArreglo.sumarNumerosDeUnArreglo();
+    }
+
+    public void Ejercicio24() {
+        Ejercicio24 NumeroMayorEnUnArray = new Ejercicio24();
+        NumeroMayorEnUnArray.NumeroMayorEnUnArray();
     }
 }

@@ -7,5 +7,5 @@
   - [x] Ej. 14 (Básico): Impares del 1 al 100 (while).
   - [x] Ej. 20 (Medio): Números divisibles entre 3 y 5 simultáneamente.
   - [x] Ej. 23 (Medio): Suma de todos los elementos de un arreglo.
-  - [ ] Ej. 24 (Medio): Encontrar el número mayor dentro de un arreglo.
+  - [x] Ej. 24 (Medio): Encontrar el número mayor dentro de un arreglo.
   - [ ] Ej. 29 (Avanzado): Recorrer una cadena de texto e imprimir carácter por carácter.
