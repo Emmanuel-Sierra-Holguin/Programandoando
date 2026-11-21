@@ -1,4 +1,4 @@
-package guia2.JavAirlines.Controlador;
+package guia2.JavAirlines.Controller;
 
 import guia2.JavAirlines.Model.Usuario;
 import guia2.JavAirlines.Model.UsuarioDAO;

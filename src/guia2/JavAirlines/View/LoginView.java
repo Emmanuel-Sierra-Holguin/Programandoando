@@ -1,4 +1,4 @@
-package guia2.JavAirlines.Vista;
+package guia2.JavAirlines.View;
 
 import javax.swing.JOptionPane;
 
