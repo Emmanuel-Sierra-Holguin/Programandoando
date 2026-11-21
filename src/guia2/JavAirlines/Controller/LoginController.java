@@ -1,8 +1,8 @@
 package guia2.JavAirlines.Controlador;
 
-import guia2.JavAirlines.Modelo.Usuario;
-import guia2.JavAirlines.Modelo.UsuarioDAO;
-import guia2.JavAirlines.Vista.LoginView;
+import guia2.JavAirlines.Model.Usuario;
+import guia2.JavAirlines.Model.UsuarioDAO;
+import guia2.JavAirlines.View.LoginView;
 
 public class LoginController {
     
