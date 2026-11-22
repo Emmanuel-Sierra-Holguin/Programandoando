@@ -1,4 +1,4 @@
-package Model;
+package guia2.JavAirlines.Model;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -12,7 +12,7 @@ public class VueloDAO {
     // CREATE
     public boolean agregar(Vuelo v) {
         String sql = "INSERT INTO vuelos (destiny, capability, status, origin) VALUES (?, ?, ?, ?)";
-        try (Connection conn = ConexionDB.getConexion()) {
+        try (Connection conn = ConexionDB.getConnection()) {
             if (conn == null) {
                 System.out.println("No hay conexión con la base de datos.");
                 return false;
@@ -34,7 +34,7 @@ public class VueloDAO {
     public List<Vuelo> verTodos() {
         List<Vuelo> vuelos = new ArrayList<>();
         String sql = "SELECT flightId, destiny, capability, status, origin FROM vuelos ORDER BY flightId";
-        try (Connection conn = ConexionDB.getConexion()) {
+        try (Connection conn = ConexionDB.getConnection()) {
             if (conn == null) return vuelos;
             try (PreparedStatement ps = conn.prepareStatement(sql);
                  ResultSet rs = ps.executeQuery()) {
@@ -57,7 +57,7 @@ public class VueloDAO {
     public boolean actualizar(Vuelo v) {
         String sql = "UPDATE vuelos SET destiny = ?, capability = ?, status = ?, origin = ? "
                    + "WHERE flightId = ?";
-        try (Connection conn = ConexionDB.getConexion()) {
+        try (Connection conn = ConexionDB.getConnection()) {
             if (conn == null) {
                 System.out.println("No hay conexión con la base de datos.");
                 return false;
@@ -79,7 +79,7 @@ public class VueloDAO {
     // DELETE
     public boolean eliminar(int flightId) {
         String sql = "DELETE FROM vuelos WHERE flightId = ?";
-        try (Connection conn = ConexionDB.getConexion()) {
+        try (Connection conn = ConexionDB.getConnection()) {
             if (conn == null) {
                 System.out.println("No hay conexión con la base de datos.");
                 return false;
@@ -98,7 +98,7 @@ public class VueloDAO {
         String sqlContar = "SELECT COUNT(*) FROM vuelos";
         String sqlInsert = "INSERT INTO vuelos (destiny, capability, status, origin) VALUES (?, ?, ?, ?)";
 
-        try (Connection conn = ConexionDB.getConexion()) {
+        try (Connection conn = ConexionDB.getConnection()) {
             if (conn == null) {
                 System.out.println("No hay conexión con la base de datos.");
                 return;
