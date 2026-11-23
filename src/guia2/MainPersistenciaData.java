@@ -15,6 +15,7 @@ public class MainPersistenciaData {
         if (opcion == 1) {
             ConexionDB crearTabDb = new ConexionDB();
             crearTabDb.createTables();
+            JOptionPane.showMessageDialog(null, "Base de datos de ejemplo creada exitosamente (javairlines.db)");
         }
 
         if (opcion == 2) {
