@@ -103,3 +103,6 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/linux,windows,macos,java
 # Driver SQLite (necesario para el proyecto)
 !libs/sqlite-jdbc-3.49.0.0.jar
+
+# Ignorar base de datos creada
+*.db
