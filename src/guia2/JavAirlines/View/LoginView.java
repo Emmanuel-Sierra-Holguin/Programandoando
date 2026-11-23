@@ -1,4 +1,4 @@
-package guia2.JavAirlines.View;
+package View;
 
 import javax.swing.JOptionPane;
 

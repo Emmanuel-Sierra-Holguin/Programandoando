@@ -1,4 +1,4 @@
-package guia2.JavAirlines.Modelo;
+package Model;
 
 public class Vuelo {
 
