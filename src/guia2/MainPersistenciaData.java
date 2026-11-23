@@ -2,7 +2,6 @@ package guia2;
 
 import javax.swing.JOptionPane;
 
-import ConexionDb.InicializarDB;
 import guia2.JavAirlines.Controller.LoginController;
 import guia2.JavAirlines.Model.ConexionDB;
 import guia2.JavAirlines.Model.InsertarData;
@@ -14,8 +13,8 @@ public class MainPersistenciaData {
                 "2.Actividad 3.4 Creando Sistema Con Login"));
 
         if (opcion == 1) {
-            InicializarDB crearTabDb = new InicializarDB();
-            crearTabDb.crearTablas();
+            ConexionDB crearTabDb = new ConexionDB();
+            crearTabDb.createTables();
         }
 
         if (opcion == 2) {
