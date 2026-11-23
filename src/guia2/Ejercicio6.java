@@ -1,7 +1,7 @@
 package guia2;
 
 import javax.swing.JOptionPane;
-public class Ej6Null {
+public class Ejercicio6 {
     public  void CampoNombre() {
         String nombre = JOptionPane.showInputDialog(
             "Escribe tu nombre: ");
