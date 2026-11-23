@@ -1,8 +1,10 @@
-package View;
+package guia2.JavAirlines.View;
 
-import Model.Vuelo;
 import java.util.List;
+
 import javax.swing.JOptionPane;
+
+import guia2.JavAirlines.Model.Vuelo;
 
 public class MenuView {
 
