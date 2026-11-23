@@ -45,8 +45,10 @@ public class UsuarioDAO {
 
     // Inserta los usuarios iniciales del sistema
     public void insertarUsuarioSiNoExiste() {
-        insertarUsuarioSiNoExiste("admin", "1234");
-        insertarUsuarioSiNoExiste("usuario", "1234");
+        insertarUsuarioSiNoExiste("carlos", "1234");
+        insertarUsuarioSiNoExiste("saul", "1234");
+        insertarUsuarioSiNoExiste("sergio", "1234");
+        insertarUsuarioSiNoExiste("barbas", "1234");
     }
 
     // Inserta un usuario solo si el username no existe en la base de datos
