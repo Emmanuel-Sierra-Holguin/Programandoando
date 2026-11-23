@@ -34,18 +34,18 @@ public class guia2Main {
                 break;
 
             case 2:
-
-                // Ejercicio2()
+                Ejercicio2 ej2 = new Ejercicio2();
+                ej2.ConversionTemperatura();
                 break;
 
             case 3:
-
-                // Ejercicio3()
+                Ejercicio3 ej3 = new Ejercicio3();
+                ej3.IMC();
                 break;
             
             case 4:
-
-                // Ejercicio4()
+                Ejercicio4 ej4 = new Ejercicio4();
+                ej4.PosicionNombre();
                 break;
 
             case 5:
@@ -54,8 +54,8 @@ public class guia2Main {
                 break;
 
             case 6:
-
-                // Ejercicio6()
+                Ejercicio6 ej6 = new Ejercicio6();
+                ej6.CampoNombre();
                 break;
         
             default:
@@ -67,9 +67,8 @@ public class guia2Main {
 
         }
         if (opcion == 2) {
-            // Ejemplo
-            // MainPersistenciaData BaseDatos = new MainPersistenciaData();
-            // BaseDatos.MenuBaseDeDatos();
+            MainPersistenciaData BaseDatos =    new MainPersistenciaData();
+            BaseDatos.MenuBaseDeDatos();
         }
 
     }
