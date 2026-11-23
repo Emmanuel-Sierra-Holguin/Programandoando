@@ -106,3 +106,6 @@ $RECYCLE.BIN/
 
 # Ignorar base de datos creada
 *.db
+
+# Ignorar binarios
+bin
