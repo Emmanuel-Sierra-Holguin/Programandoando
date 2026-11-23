@@ -33,14 +33,14 @@ public class VueloDAO {
     // READ
     public List<Vuelo> verTodos() {
         List<Vuelo> vuelos = new ArrayList<>();
-        String sql = "SELECT flightId, destiny, capability, status, origin FROM vuelos ORDER BY flightId";
+        String sql = "SELECT id, destiny, capability, status, origin FROM vuelos ORDER BY id";
         try (Connection conn = ConexionDB.getConnection()) {
             if (conn == null) return vuelos;
             try (PreparedStatement ps = conn.prepareStatement(sql);
                  ResultSet rs = ps.executeQuery()) {
                 while (rs.next()) {
                     vuelos.add(new Vuelo(
-                            rs.getInt("flightId"),
+                            rs.getInt("id"),
                             rs.getString("destiny"),
                             rs.getInt("capability"),
                             rs.getString("status"),
@@ -56,7 +56,7 @@ public class VueloDAO {
     // UPDATE
     public boolean actualizar(Vuelo v) {
         String sql = "UPDATE vuelos SET destiny = ?, capability = ?, status = ?, origin = ? "
-                   + "WHERE flightId = ?";
+                   + "WHERE id = ?";
         try (Connection conn = ConexionDB.getConnection()) {
             if (conn == null) {
                 System.out.println("No hay conexión con la base de datos.");
@@ -78,7 +78,7 @@ public class VueloDAO {
 
     // DELETE
     public boolean eliminar(int flightId) {
-        String sql = "DELETE FROM vuelos WHERE flightId = ?";
+        String sql = "DELETE FROM vuelos WHERE id = ?";
         try (Connection conn = ConexionDB.getConnection()) {
             if (conn == null) {
                 System.out.println("No hay conexión con la base de datos.");
