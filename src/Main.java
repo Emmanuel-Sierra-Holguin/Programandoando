@@ -1,5 +1,4 @@
 import javax.swing.JOptionPane;
-
 import guia1.guiaMain;
 import guia2.guia2Main;
 
@@ -9,8 +8,9 @@ public class Main {
                 JOptionPane.showInputDialog(null, "Bienvenido A Programando Ando \n" +
                         "Aqui Aprenderas Java  \n" +
                         "Ingrese una opcion para El Programa\n" +
-                    "1.Ejercicio Guia 1\n" +
-                        "2.Ejercicios Guia 2\n" ));
+                        "1.Ejercicio Guia 1\n" +
+                        "2.Ejercicios Guia 2\n"
+                        ));
 
 
         if (opcion == 1) {
