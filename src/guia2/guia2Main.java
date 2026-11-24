@@ -20,7 +20,7 @@ public class guia2Main {
                 "3. Calculadora de IMC \n"+
                 "4. Acceso a arreglo por índice \n"+
                 "5. Validación con bucle (retry) \n"+
-                "5. Cancelación del diálogo (NullPointerException) \n"+
+                "6. Cancelación del diálogo (NullPointerException) \n"+
                 "Ingrese la opcion deseada -> \n"+
                 "\n"
             )
@@ -66,7 +66,7 @@ public class guia2Main {
 
 
         }
-        if (opcion == 2) {
+        else if (opcion == 2) {
             MainPersistenciaData BaseDatos =    new MainPersistenciaData();
             BaseDatos.MenuBaseDeDatos();
         }

@@ -121,6 +121,7 @@ public class guiaMain {
             opcion = Integer.parseInt(
                     JOptionPane.showInputDialog(null,
                             "2.Ejercicios practicos: ciclos for, while y arreglos. \n " +
+                                    "Lista de Ejercicios: \n" +
                                     "11. Imprimir los numeros del 1 al 50 usando un ciclo for. \n"
                                     +
                                     "12. Mostrar los numeros del 50 al 1 usando un ciclo for. \n"
