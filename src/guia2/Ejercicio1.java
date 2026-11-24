@@ -20,25 +20,28 @@ public class Ejercicio1 {
     "== Ingreso al Ejercicio 1 de la Guia 2 ==\n" +
     "=========================================");
 
+        String entradaA = JOptionPane.showInputDialog("Dividendo:");
+        if (entradaA == null) return;
+
+        String entradaB = JOptionPane.showInputDialog("Divisor:");
+        if (entradaB == null) return;
+
         try {
 
-        	int a = Integer.parseInt(
-                JOptionPane.showInputDialog("Dividendo:"));
-
-        	int b = Integer.parseInt(
-                JOptionPane.showInputDialog("Divisor:"));
+            int a = Integer.parseInt(entradaA.trim());
+            int b = Integer.parseInt(entradaB.trim());
 
             JOptionPane.showMessageDialog(null,
-            	"Resultado: " + (a / b));
+                "Resultado: " + (a / b));
 
-    	} catch (NumberFormatException e) {
-        	JOptionPane.showMessageDialog(null,
-            	"Error: ingresa solo numeros enteros.");
-
-    	} catch (ArithmeticException e) {
+        } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(null,
-            	"Error: no se puede dividir entre cero.");
-    	}
+                "Error: ingresa solo numeros enteros.");
+
+        } catch (ArithmeticException e) {
+            JOptionPane.showMessageDialog(null,
+                "Error: no se puede dividir entre cero.");
+        }
 
 
     }

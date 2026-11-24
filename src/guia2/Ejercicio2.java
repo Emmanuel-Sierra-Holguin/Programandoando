@@ -4,9 +4,11 @@ import javax.swing.JOptionPane;
 
 public class Ejercicio2 {
     public void ConversionTemperatura() {
+        String entrada = JOptionPane.showInputDialog("Temperatura en Celsius:");
+        if (entrada == null) return;
+
         try {
-            double c = Double.parseDouble(
-                    JOptionPane.showInputDialog("Temperatura en Celsius:"));
+            double c = Double.parseDouble(entrada.trim());
             double f = (c * 9.0 / 5) + 32;
             JOptionPane.showMessageDialog(null,
                     c + "C = " + f + "F");
