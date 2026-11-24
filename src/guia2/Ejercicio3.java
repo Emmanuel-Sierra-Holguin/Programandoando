@@ -4,11 +4,15 @@ import javax.swing.JOptionPane;
 
 public class Ejercicio3 {
     public void IMC() {
+        String entradaPeso = JOptionPane.showInputDialog("Peso (kg):");
+        if (entradaPeso == null) return;
+
+        String entradaAltura = JOptionPane.showInputDialog("Estatura (m):");
+        if (entradaAltura == null) return;
+
         try {
-            double peso = Double.parseDouble(
-                    JOptionPane.showInputDialog("Peso (kg):"));
-            double altura = Double.parseDouble(
-                    JOptionPane.showInputDialog("Estatura (m):"));
+            double peso = Double.parseDouble(entradaPeso.trim());
+            double altura = Double.parseDouble(entradaAltura.trim());
             if (altura == 0)
                 throw new ArithmeticException("La estatura no puede ser 0");
             double imc = peso / (altura * altura);
