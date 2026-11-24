@@ -17,17 +17,22 @@ public class InsertarData {
                 + "('Medellín', 'Cartagena', 150, 'A tiempo'), "
                 + "('Cali', 'San Andrés', 160, 'Abordando')";
 
-        try (Connection conn = ConexionDB.getConnection();
-                Statement stmt = conn.createStatement()) {
-
-            // Verificamos si la tabla vuelos está vacía para no duplicarlos cada vez que
-            // arranque el programa
-            ResultSet rs = stmt.executeQuery("SELECT COUNT(*) FROM vuelos");
-            if (rs.next() && rs.getInt(1) == 0) {
-                stmt.execute(seedVuelos);
+        try (Connection conn = ConexionDB.getConnection()) {
+            if (conn == null) {
+                System.out.println("No hay conexión con la base de datos.");
+                return;
             }
 
-            System.out.println("Data inicial de JavAirlines verificada/insertada.");
+            try (Statement stmt = conn.createStatement()) {
+                // Verificamos si la tabla vuelos está vacía para no duplicarlos cada vez que
+                // arranque el programa
+                ResultSet rs = stmt.executeQuery("SELECT COUNT(*) FROM vuelos");
+                if (rs.next() && rs.getInt(1) == 0) {
+                    stmt.execute(seedVuelos);
+                }
+
+                System.out.println("Data inicial de JavAirlines verificada/insertada.");
+            }
         } catch (SQLException e) {
             System.out.println("Error de base de datos al insertar data inicial: " + e.getMessage());
         }
