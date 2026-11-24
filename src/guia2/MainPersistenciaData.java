@@ -3,8 +3,11 @@ package guia2;
 import javax.swing.JOptionPane;
 
 import guia2.JavAirlines.Controller.LoginController;
+import guia2.JavAirlines.Controller.VueloController;
 import guia2.JavAirlines.Model.ConexionDB;
-import guia2.JavAirlines.Model.InsertarData;
+import guia2.JavAirlines.Model.Usuario;
+import guia2.JavAirlines.Model.UsuarioDAO;
+import guia2.JavAirlines.Model.VueloDAO;
 
 public class MainPersistenciaData {
     public void MenuBaseDeDatos() {
@@ -19,14 +22,21 @@ public class MainPersistenciaData {
         }
 
         if (opcion == 2) {
-            ConexionDB crear = new ConexionDB();
-            crear.createTables();
-            
-            InsertarData insertarData = new InsertarData();
-            insertarData.insertarData();
-            
+            ConexionDB.createTables();
+            VueloDAO.insertarDatosIniciales();
+            new UsuarioDAO().insertarUsuarioSiNoExiste();
+
             LoginController loginController = new LoginController();
-            loginController.iniciarSesion();
+            while (true) {
+                Usuario usuarioActivo = loginController.iniciarSesion();
+                if (usuarioActivo == null) {
+                    break;
+                }
+
+                VueloController vueloController = new VueloController(usuarioActivo);
+                vueloController.iniciar();
+                loginController.cerrarSesion();
+            }
         }
     }
 }

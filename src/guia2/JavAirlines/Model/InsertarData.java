@@ -8,10 +8,8 @@ import java.sql.Statement;
 public class InsertarData {
 
     public void insertarData() {
-        // 1. Usuarios obligatorios de la Fase 3 (INSERT OR IGNORE evita duplicados por el UNIQUE de username)
-        String seedUsuarios = "INSERT OR IGNORE INTO usuarios (username, password) "
-            + "VALUES ('admin', 'admin123'), ('empleado', 'emp456')";
-
+        // 1. Usuarios obligatorios de la Fase 3 (INSERT OR IGNORE evita duplicados por
+        // el UNIQUE de username)
         // 2. Mínimo 3 vuelos iniciales coherentes con la temática
         String seedVuelos = "INSERT INTO vuelos (origin, destiny, capability, status) "
                 + "VALUES "
@@ -20,11 +18,10 @@ public class InsertarData {
                 + "('Cali', 'San Andrés', 160, 'Abordando')";
 
         try (Connection conn = ConexionDB.getConnection();
-             Statement stmt = conn.createStatement()) {
+                Statement stmt = conn.createStatement()) {
 
-            stmt.execute(seedUsuarios);
-
-            // Verificamos si la tabla vuelos está vacía para no duplicarlos cada vez que arranque el programa
+            // Verificamos si la tabla vuelos está vacía para no duplicarlos cada vez que
+            // arranque el programa
             ResultSet rs = stmt.executeQuery("SELECT COUNT(*) FROM vuelos");
             if (rs.next() && rs.getInt(1) == 0) {
                 stmt.execute(seedVuelos);
